@@ -13,7 +13,6 @@ parser.add_argument('-s', '--start_number', type=int,default=0,
 parser.add_argument('-e', '--end_number', type=int,default=10,
                     help='to which position to download')
 args = parser.parse_args()
-print(args)
 
 def main(args):
 	download(args.genre,args.start_number,args.end_number)
@@ -43,5 +42,4 @@ def download(genre, startNum, endNum):
 
 
 if __name__ == "__main__":
-	print(args)
 	main(args)
